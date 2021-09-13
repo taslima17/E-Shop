@@ -1,86 +1,33 @@
-body {
+/* body */
+#body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  background: beige;
+  
 }
-.search-field {
-  border: none;
-  border-radius: 50px;
-  padding: 5px;
-  outline: none;
+
+/* heading */
+h1{
+  color: rgb(218, 94, 12);
+  font-family:cursive, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.search-field:hover {
-  outline: none;
-  border: none;
-}
-.search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
-  border-radius: 5px;
-  margin: auto;
-  margin-top: 50px;
-  border-right: none;
-}
-.search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
-}
-#all-products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
-  text-align: center;
-  width: 100%;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-}
-.single-product {
-  padding: 10px;
-  transition: 0.6s;
-}
-.single-product:hover {
-  box-shadow: 4px 4px 7px gray;
-  border-radius: 10px;
-  border: 1px solid cyan;
-}
+ 
+/* image  style */
 .product-image {
   width: 150px;
-  height: 150px;
+  height: 230px;
+ padding: 10px;
 }
+
+/* cart style */
 .cart {
+  top:230px;
+  right: 0;
   width: 350px;
-  /* border: 1px solid green; */
+  border: 1px solid green; 
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
-  margin-right: 30px;
+  /* margin-right:  50px ; */
   position: fixed;
-}
-.cart-main {
-  padding-right: 30px;
-}
-@media only screen and (max-width: 768px) {
-  #all-products {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .cart {
-    width: 300px;
-    /* border: 1px solid green; */
-    padding: 10px;
-    box-shadow: 10px 10px 20px gray;
-    border-radius: 5px;
-    margin-right: 30px;
-    position: fixed;
-  }
-  .cart-main {
-    padding-right: 10px;
-  }
-}
-@media only screen and (max-width: 468px) {
-  #all-products {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
