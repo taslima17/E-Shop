@@ -21,19 +21,17 @@ const showProducts = (products) => {
     const div = document.createElement("div");
     div.classList.add("col");
 
-    div.innerHTML = `<div class="card h-100 bg-secondary text-white">
+    div.innerHTML = `<div class="card h-100 shadow-sm p-3 bg-light  text-center">
     <img src=${image} class="card-img-top product-image" alt="...">
     <div class="card-body">
-    <h3>${product.title}</h3>
+    <h4>${product.title}</h4>
       <p>Category: ${product.category}</p>
       <p>Average Rating: ${product.rating.rate} <br> Total Rating: ${product.rating.count}</p>
-
-      <h2>Price: $ ${product.price}</h2>
-             
+      <h5 class=" fw-bold">Price: $ ${product.price}</h5>          
     </div>
-     <div class="card-footer d-flex justify-content-between">
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-light">add to cart</button> 
-      <button type="button" class="btn btn-light " data-toggle="modal"  onclick="show(${product.id})">
+     <div class=" border-0 mb-1 d-flex justify-content-between">
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-danger">add to cart</button> 
+      <button type="button" class="btn  text-white " id="details" onclick="show(${product.id})">
   Details
 </button>
     </div>
